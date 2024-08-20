@@ -40,7 +40,7 @@ Setup: Popular_Baby_Names.csv
 
 ## Tasks
 ### Task: 0. Simple helper function
-mandatory
+#mandatory
 Write a function named index_range that takes two integer arguments page and page_size.
 
 The function should return a tuple of size two containing a start index and an end index corresponding to the range of indexes to return in a list for those particular pagination parameters.
@@ -49,7 +49,7 @@ Page numbers are 1-indexed, i.e. the first page is page 1.
 
 
 ### Task: 1. Simple pagination
-mandatory
+#mandatory
 Copy index_range from the previous task and the following class into your code
 ```
 import csv
@@ -88,7 +88,7 @@ Implement a method named get_page that takes two integer arguments page with def
 
 
 ### Task: 2. Hypermedia pagination
-mandatory
+#mandatory
 Replicate code from the previous task.
 
 Implement a get_hyper method that takes the same arguments (and defaults) as get_page and returns a dictionary containing the following key-value pairs:
@@ -106,7 +106,7 @@ You can use the math module if necessary.
 
 
 ### Task: 3. Deletion-resilient hypermedia pagination
-mandatory
+#mandatory
 The goal here is that if between two queries, certain rows are removed from the dataset, the user does not miss items from dataset when changing page.
 
 Start 3-hypermedia_del_pagination.py with this code:
